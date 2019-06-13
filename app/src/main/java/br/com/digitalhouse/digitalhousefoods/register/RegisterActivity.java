@@ -1,4 +1,4 @@
-package br.com.digitalhouse.digitalhousefoods.login;
+package br.com.digitalhouse.digitalhousefoods.register;
 
 import android.content.Intent;
 import android.content.SharedPreferences;

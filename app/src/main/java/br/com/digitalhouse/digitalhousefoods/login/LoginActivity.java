@@ -13,6 +13,7 @@ import android.widget.CheckBox;
 
 import br.com.digitalhouse.digitalhousefoods.R;
 import br.com.digitalhouse.digitalhousefoods.home.HomeActivity;
+import br.com.digitalhouse.digitalhousefoods.register.RegisterActivity;
 
 public class LoginActivity extends AppCompatActivity {
     private TextInputLayout textInputLayoutEmail;

@@ -12,7 +12,7 @@
         <activity android:name=".detail.DetailActivity"></activity>
         <activity android:name=".home.HomeActivity" />
         <activity
-            android:name=".login.RegisterActivity"
+            android:name=".register.RegisterActivity"
             android:parentActivityName=".login.LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
