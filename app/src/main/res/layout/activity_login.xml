@@ -21,8 +21,9 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/blue_statusbar"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -39,15 +40,16 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/blue_statusbar"/>
     </android.support.design.widget.TextInputLayout>
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Remember-me"
+        android:text="@string/remember_me"
         android:layout_marginTop="8dp"
         android:layout_marginStart="@dimen/fab_margin"
         android:shadowColor="@color/red_login"
@@ -63,8 +65,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/fab_margin"
         android:backgroundTint="@color/red_login"
-        android:text="LOG IN"
-        android:textColor="#FFFFFF"
+        android:text="@string/log_in"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
@@ -88,7 +90,7 @@
             android:layout_centerInParent="true"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:text="OR"
+            android:text="@string/or"
             android:textColor="@color/gray_divider" />
 
         <View
@@ -118,8 +120,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="@dimen/fab_margin"
         android:backgroundTint="@color/blue_button"
-        android:text="LOGIN WITH FACEBOOK"
-        android:textColor="#FFFFFF"
+        android:text="@string/login_with_facebook"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
@@ -132,8 +134,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="@dimen/fab_margin"
         android:backgroundTint="@color/gray_button"
-        android:text="REGISTER"
-        android:textColor="#FFFFFF"
+        android:text="@string/register"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFacebook" />
