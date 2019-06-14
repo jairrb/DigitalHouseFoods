@@ -57,37 +57,39 @@ public class HomeFragment extends Fragment implements RecycleViewClickListener {
         restaurants.add(new Restaurant("Madero Steak House!", "Av. Bandeira Paulista, 823 - Itaim Bibi, São Paulo", "00:00", R.drawable.restaurant_madero, getMenuRestaurant(5)));
 
 
-
         return restaurants;
     }
 
     private List<RestaurantMenu> getMenuRestaurant(int id) {
         List<RestaurantMenu> restaurantMenu = new ArrayList<>();
 
-        switch (id){
+        switch (id) {
             case 1:
-                restaurantMenu.add(new RestaurantMenu("The Outback Special 325g","Um steak especial: nosso clássico miolo de alcatra com sabor acentuado pelos temperos do Outback. Preparado na chapa no ponto que você preferir.",R.drawable.outback_a));
-                restaurantMenu.add(new RestaurantMenu("Herb Crusted Filet","São três cortes de filet mignon temperados com ervas finas, servidos com molho Cabernet Merlot. A exclusiva combinação de Arroz Pilaf e cebolas grelhadas é a sugestão da casa para acompanhar.",R.drawable.outback_b));
-                restaurantMenu.add(new RestaurantMenu("New York Strip Steak","375g do corte nobre do contra-filet, perfeitamente temperado e preparado na chapa.",R.drawable.outback_c));
-                restaurantMenu.add(new RestaurantMenu("Victoria’s Filet","230g do mais suculento filet mignon preparado no estilo Outback. *produto não disponível nos restaurantes de Ribeirão Preto, Sorocaba e S. José do Rio Preto.",R.drawable.outback_d));
-
+                restaurantMenu.add(new RestaurantMenu("The Outback Special 325g", "Um steak especial: nosso clássico miolo de alcatra com sabor acentuado pelos temperos do Outback. Preparado na chapa no ponto que você preferir.", R.drawable.outback_a));
+                restaurantMenu.add(new RestaurantMenu("Herb Crusted Filet", "São três cortes de filet mignon temperados com ervas finas, servidos com molho Cabernet Merlot. A exclusiva combinação de Arroz Pilaf e cebolas grelhadas é a sugestão da casa para acompanhar.", R.drawable.outback_b));
+                restaurantMenu.add(new RestaurantMenu("New York Strip Steak", "375g do corte nobre do contra-filet, perfeitamente temperado e preparado na chapa.", R.drawable.outback_c));
+                restaurantMenu.add(new RestaurantMenu("Victoria’s Filet", "230g do mais suculento filet mignon preparado no estilo Outback. *produto não disponível nos restaurantes de Ribeirão Preto, Sorocaba e S. José do Rio Preto.", R.drawable.outback_d));
+                break;
             case 2:
-                restaurantMenu.add(new RestaurantMenu("Lumberjack","Banquete do mais tenro e suculento corte especial de Angus Black muito bem acompanhado de nossas crocantes batatas rústicas e nossa insuperável cebola roxa marinada. ",R.drawable.sisenor_a));
-                restaurantMenu.add(new RestaurantMenu("American Barbecue","Farta porção de hamburguinhos caseiros, galeto marinado e linguiça artesanal grelhados e servidos com a nossa imbatível cebola caramelizada. ",R.drawable.sisenor_b));
-                restaurantMenu.add(new RestaurantMenu("Fajitas","As Fajitas são um dos mais tradicionais pratos da culinária TEX-MEX. Acompanhadas de nachos, tortillas, frijoles, guacamole, molho sour mex e pico de gallo. ",R.drawable.sisenor_c));
-                restaurantMenu.add(new RestaurantMenu("Wine Shake de Pitaya","Nosso delicioso shake a base de vinho, sorvete de limão e pitaya.",R.drawable.sisenor_d));
+                restaurantMenu.add(new RestaurantMenu("Lumberjack", "Banquete do mais tenro e suculento corte especial de Angus Black muito bem acompanhado de nossas crocantes batatas rústicas e nossa insuperável cebola roxa marinada. ", R.drawable.sisenor_a));
+                restaurantMenu.add(new RestaurantMenu("American Barbecue", "Farta porção de hamburguinhos caseiros, galeto marinado e linguiça artesanal grelhados e servidos com a nossa imbatível cebola caramelizada. ", R.drawable.sisenor_b));
+                restaurantMenu.add(new RestaurantMenu("Fajitas", "As Fajitas são um dos mais tradicionais pratos da culinária TEX-MEX. Acompanhadas de nachos, tortillas, frijoles, guacamole, molho sour mex e pico de gallo. ", R.drawable.sisenor_c));
+                restaurantMenu.add(new RestaurantMenu("Wine Shake de Pitaya", "Nosso delicioso shake a base de vinho, sorvete de limão e pitaya.", R.drawable.sisenor_d));
+                break;
             case 3:
-                restaurantMenu.add(new RestaurantMenu("Tilápia à Meunière","400g de filet de tilápia grelhado com molho especial de alcaparras, champignon e arroz com brócolis e legumes.",R.drawable.coco_a));
-                restaurantMenu.add(new RestaurantMenu("Carne de Sol do Maranhão","Carne de Sol de filé e baião de dois. Acompanha farofa de ovos, banana à milanesa, cebola refogada, purê de macaxeira e vinagrete.",R.drawable.coco_b));
-                restaurantMenu.add(new RestaurantMenu("Camarões Grelhados","Camarões preparados com alho e salsinha no azeite de ervas. Acompanha arroz de brócolis e cenoura, batata, brócolis, champignon, ervilha, abobrinha.",R.drawable.coco_c));
-                restaurantMenu.add(new RestaurantMenu("Ratatouille","Deliciosa receita com tomate, berinjela, cebola roxa e abobrinha. Preparada ao forno com ervas e alho confitado",R.drawable.coco_d));
+                restaurantMenu.add(new RestaurantMenu("Tilápia à Meunière", "400g de filet de tilápia grelhado com molho especial de alcaparras, champignon e arroz com brócolis e legumes.", R.drawable.coco_a));
+                restaurantMenu.add(new RestaurantMenu("Carne de Sol do Maranhão", "Carne de Sol de filé e baião de dois. Acompanha farofa de ovos, banana à milanesa, cebola refogada, purê de macaxeira e vinagrete.", R.drawable.coco_b));
+                restaurantMenu.add(new RestaurantMenu("Camarões Grelhados", "Camarões preparados com alho e salsinha no azeite de ervas. Acompanha arroz de brócolis e cenoura, batata, brócolis, champignon, ervilha, abobrinha.", R.drawable.coco_c));
+                restaurantMenu.add(new RestaurantMenu("Ratatouille", "Deliciosa receita com tomate, berinjela, cebola roxa e abobrinha. Preparada ao forno com ervas e alho confitado", R.drawable.coco_d));
+                break;
             case 4:
-                restaurantMenu.add(new RestaurantMenu("Quattro Formaggi","Fondue com queijos ementhal, gruyère, estepe e gorgonzola ",R.drawable.chale_a));
-                restaurantMenu.add(new RestaurantMenu("Lindt Classic","Com mais puro chocolate suíço ao leite",R.drawable.chale_b));
+                restaurantMenu.add(new RestaurantMenu("Quattro Formaggi", "Fondue com queijos ementhal, gruyère, estepe e gorgonzola ", R.drawable.chale_a));
+                restaurantMenu.add(new RestaurantMenu("Lindt Classic", "Com mais puro chocolate suíço ao leite", R.drawable.chale_b));
+                break;
             case 5:
-                restaurantMenu.add(new RestaurantMenu("Codeiro Super","Hamburger de cordeiro no delicioso pão madero",R.drawable.madero_a));
-                restaurantMenu.add(new RestaurantMenu("Junior Bacon","Hamburger e bacon no delicioso pão madero",R.drawable.madero_b));
-
+                restaurantMenu.add(new RestaurantMenu("Codeiro Super", "Hamburger de cordeiro no delicioso pão madero", R.drawable.madero_a));
+                restaurantMenu.add(new RestaurantMenu("Junior Bacon", "Hamburger e bacon no delicioso pão madero", R.drawable.madero_b));
+                break;
         }
 
 
