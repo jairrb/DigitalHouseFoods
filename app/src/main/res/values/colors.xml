@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="blue_statusbar">#303F9F</color>
+    <color name="blue_appbar">#3F51B5</color>
+    <color name="blue_button">#577AC2</color>
+    <color name="red_login">#FF5252</color>
+    <color name="gray_divider">#C0CCDA</color>
+    <color name="gray_button">#8492A6</color>
+    <color name="white">#FFFFFF</color>
 </resources>
