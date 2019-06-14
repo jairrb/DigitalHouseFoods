@@ -18,6 +18,7 @@ import br.com.digitalhouse.digitalhousefoods.adapters.RecycleViewAdapter;
 import br.com.digitalhouse.digitalhousefoods.detail.DetailActivity;
 import br.com.digitalhouse.digitalhousefoods.interfaces.RecycleViewClickListener;
 import br.com.digitalhouse.digitalhousefoods.model.Restaurant;
+import br.com.digitalhouse.digitalhousefoods.model.RestaurantMenu;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -48,18 +49,30 @@ public class HomeFragment extends Fragment implements RecycleViewClickListener {
 
     private List<Restaurant> getRestaurants() {
         List<Restaurant> restaurants = new ArrayList<>();
-        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a));
-        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a));
-        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a));
-        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a));
-        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a));
-        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a));
-        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a));
-        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a));
-        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a));
-        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a));
+
+        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a, getMenuRestaurant()));
+        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a, getMenuRestaurant()));
+        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a, getMenuRestaurant()));
+        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a, getMenuRestaurant()));
+        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a, getMenuRestaurant()));
+        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a, getMenuRestaurant()));
+        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a, getMenuRestaurant()));
+        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a, getMenuRestaurant()));
+        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a, getMenuRestaurant()));
+        restaurants.add(new Restaurant("Tony Roma's", "Av. Lavandisca, 717 - Indianópolis, São Paulo", "22:00", R.drawable.restaurant_a, getMenuRestaurant()));
 
         return restaurants;
+    }
+
+    private List<RestaurantMenu> getMenuRestaurant() {
+        List<RestaurantMenu> restaurantMenu = new ArrayList<>();
+        restaurantMenu.add(new RestaurantMenu("Salada com molho gengibre","blablablablablablablablablablablablablablabla",R.drawable.menu_a));
+        restaurantMenu.add(new RestaurantMenu("Salada com molho gengibre","blablablablablablablablablablablablablablabla",R.drawable.menu_a));
+        restaurantMenu.add(new RestaurantMenu("Salada com molho gengibre","blablablablablablablablablablablablablablabla",R.drawable.menu_a));
+        restaurantMenu.add(new RestaurantMenu("Salada com molho gengibre","blablablablablablablablablablablablablablabla",R.drawable.menu_a));
+
+
+        return restaurantMenu;
     }
 
     @Override
